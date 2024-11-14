@@ -1,8 +1,8 @@
 # importing random module
 import random
-
+print("Welcome to The Number Guessing Game \033[1mWith Larry!\033[0m!")
 # define number to be guessed
-top_of_range = input('Type a number: ')
+top_of_range = input('Type the Maximum Number you would like to guess: ')
 
 # if statement to ensure value entered (which is a string according to python) is an integer and greater than 1
 if top_of_range.isdigit():
