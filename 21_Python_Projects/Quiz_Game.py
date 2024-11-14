@@ -52,7 +52,7 @@ if game_play == "1":
 
 # Game 2
 elif game_play == "2":
-    print("Welcome to the 6 Proverbs with Larry Quiz Game! \nAll the best.")
+    print("Welcome to the 5 Proverbs with Larry Quiz Game! \nAll the best.")
     answer = input("The early bird ").lower()
     if answer == "catches the worm":
         print("Correct!")
@@ -61,7 +61,7 @@ elif game_play == "2":
         print("Incorrect! \n correct answer is: \033[1mThe early bird\033[0m catches the worm.")
 
     answer = input("Cleanliness is ").lower()
-    if answer == "next to Godliness":
+    if answer == "next to godliness":
         print("Correct! ")
         score += 1
     else:
@@ -105,7 +105,7 @@ elif game_play == "3":
     else:
         print("Incorrect! \n\033[Correct answer:\033[0m 007.")
 
-    answer = input("According to Guinness World Records, what's the best-selling book of all time?  The").lower()
+    answer = input("According to Guinness World Records, what's the best-selling book of all time? The ").lower()
     if answer == "bible":
         print("Correct! ")
         score += 1
@@ -140,10 +140,4 @@ else:
 print("You got " + str(score) + " questions correct!")
 print("You got " + str((score / 5) * 100) + " %.")
 
-if 2 <= score >= 0:
-    print("You can do better")
-elif 4 <= score >= 3:
-    print("Average")
-elif 5 == score >= 4:
-    print("Genius! ;) Treat on Me.")
 
